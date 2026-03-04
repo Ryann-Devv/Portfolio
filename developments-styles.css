@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+  background-color: #212121;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* HEADER (your developer / your vision) */
+.site-header {
+  background-color: #212121;
+  padding: 3.5rem 0 2.5rem 0;
+
+}
+
+.headline-main {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.headline-sub {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #8c8c8c;
+  display: inline-block;
+  margin-top: 0.2rem;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  color: #ffffff;
+  max-width: 700px;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.cta-links {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.cta {
+  background-color: #313131;
+  color: white;
+  padding: 0.7rem 2rem;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background 0.2s;
+  display: inline-block;
+}
+
+.cta:hover {
+  background-color: #cbcbcb;
+  color: #212121;
+}
+
+
+
+/* FOOTER - This will now stick to bottom */
+.site-footer {
+  grid-row: 2;
+  background: #313131;
+  padding: 1.8rem 0;
+  text-align: center;
+  color: #ffffff;
+  border-top: 1px solid #333333;
+  font-size: 0.95rem;
+}
+
+.site-footer p {
+  opacity: 0.85;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .headline-main {
+    font-size: 2.4rem;
+  }
+  .headline-sub {
+    font-size: 1.7rem;
+  }
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .stats-flex {
+    justify-content: center;
+  }
+  .connect-item {
+    width: 100%;
+    justify-content: center;
+  }
+  .cta-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
