@@ -206,6 +206,7 @@ body {
   min-width: 240px;
   flex: 0 1 auto;
   justify-self: center;
+  text-decoration: none;
 }
 
 .connect-icon {
@@ -218,11 +219,13 @@ body {
   font-weight: 600;
   margin-bottom: 0.1rem;
   color: #ffff;
+  text-decoration: none;
 }
 
 .connect-content p {
   color: #8c8c8c;
   font-size: 0.9rem;
+  text-decoration: none;
 }
 
 /* FOOTER (junior dev signature) */
