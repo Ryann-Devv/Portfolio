@@ -183,6 +183,7 @@ body {
   padding: 3.5rem 0;
   border-top: 1px solid #dee5ed;
   border-bottom: 1px solid #dee5ed;
+  text-decoration: none;
 }
 
 .connect-grid {
@@ -209,6 +210,24 @@ body {
   text-decoration: none;
 }
 
+/* Force remove all underlines from connect section */
+.connect-section a,
+.connect-section a:hover,
+.connect-section a:visited,
+.connect-section a:active,
+.connect-section a:focus,
+.connect-item a,
+.connect-item a * {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  outline: none;
+}
+
+.connect-content h4,
+.connect-content p {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
 .connect-icon {
   font-size: 2rem;
   line-height: 1;
@@ -219,7 +238,7 @@ body {
   font-weight: 600;
   margin-bottom: 0.1rem;
   color: #ffff;
-  text-decoration: none;
+  text-decoration-line: none;
 }
 
 .connect-content p {
